@@ -1,0 +1,299 @@
+/* src/components/Page1/Telegram2.module.scss */
+
+// Переменные и импорты
+@import "../styles/variables";
+
+// Корневой контейнер страницы
+.telegramRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../assets/lastbg1.webp");
+  background-position: center top; // позиционируем фон с верхнего центра
+  background-size: cover; // покр
+  padding: 2rem 0.1rem;
+}
+
+// Внутренний контейнер
+
+// Обёртка всего контента
+.telegram_box {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 3rem 1rem;
+  max-width: 750px;
+  width: 100%;
+  border-radius: 12px;
+  
+  text-align: center;
+}
+
+// Блок с датой/временем
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  gap: 3.5rem;
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px $shadow;
+  .calendarIcon {
+    color: $text-dark;
+    font-size: 2.7rem;
+  }
+  .calendarText {
+    font-size: 17px;
+    font-weight: 600;
+    color: $text-dark;
+  }
+}
+
+.calendar__left_box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.calendar__left_text_box {
+  display: flex;
+  flex-direction: column;
+}
+.calendar__right_text_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_box {
+  margin-top: 3.5rem;
+}
+
+.subtitles {
+  font-size: 70px;
+  font-weight: 600;
+  color: black;
+  strong {
+    color: $primary;
+  }
+}
+.subtitle {
+  margin-top: 10px;
+
+  font-size: 30px;
+  font-weight: 400;
+  color: $text-dark;
+  strong {
+    color: $primary;
+  }
+}
+
+// Заголовки
+.telegramHeadingWar,
+.telegramHeading {
+  margin: 0;
+  text-align: center;
+}
+
+.telegramHeadingWar {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $text-dark;
+}
+
+.telegramHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $text-dark;
+}
+
+// Кнопка подписки
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 2rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #000000;
+ background: #ff0000;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgb(255, 0, 0) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px $shadow;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.telegram-btn:hover {
+  transform: translateY(-2px);
+}
+
+.telegram-icon {
+  font-size: 2.5rem;
+}
+
+.telegramBox {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+// Адаптивные стили
+@media (max-width: 1100px) {
+  .telegramHeadingWar {
+    font-size: 2rem;
+  }
+  .telegramHeading {
+    font-size: 1.5rem;
+  }
+  .telegramRoot {
+    min-height: 100vh; // минимум под экран
+    background-image: url("../assets/defbg.webp");
+    background-position: center top; // позиционируем фон с верхнего центра
+    background-size: cover; // покрываем всю ширину, высота масштабируется пропорц.
+  }
+
+  .telegram_box {
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  .calendar {
+    max-width: 1100px;
+    width: 100%;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 2rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #fff;
+   background: #ff0000;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgb(255, 0, 0) 100%
+  );
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px $shadow;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+}
+
+@media (max-width: 580px) {
+  .telegram_box {
+    padding: 2rem 0.5rem;
+  }
+  .calendar {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  .telegramHeadingWar {
+    font-size: 1.75rem;
+  }
+  .telegramHeading {
+    font-size: 1.25rem;
+  }
+
+  .calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px $shadow;
+    .calendarIcon {
+      color: $text-dark;
+      font-size: 1.7rem;
+    }
+    .calendarText {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-dark;
+    }
+  }
+
+  .calendar__left_box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .calendar__left_text_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .calendar__right_text_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title_box {
+    margin-top: 3.5rem;
+  }
+
+  .subtitles {
+    font-size: 70px;
+    font-weight: 600;
+    color: black;
+    strong {
+      color: $primary;
+    }
+  }
+  .subtitle {
+    margin-top: 10px;
+
+    font-size: 30px;
+    font-weight: 400;
+    color: $text-dark;
+    strong {
+      color: $primary;
+    }
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+  background: #ff0000;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgb(255, 0, 0) 100%
+  );
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px $shadow;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+}
