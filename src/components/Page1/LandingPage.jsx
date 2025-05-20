@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FiCalendar } from "react-icons/fi";
-яimport { FcGraduationCap } from "react-icons/fc";
+import { FcGraduationCap } from "react-icons/fc";
 
 
 import styles from "./LandingPage.module.scss";
