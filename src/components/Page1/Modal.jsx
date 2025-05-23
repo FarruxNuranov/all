@@ -52,7 +52,7 @@ export default function Modal({ isOpen, onClose }) {
 
     // 👇 URL скрипта Google Apps Script
     const scriptUrl =
-      "https://script.google.com/macros/s/AKfycbxSu3sXY-o4zMTtwuDeuLGV83cRsYtCDhhJUsTG0r5BDvsbi8DVZazz1speiekstOLh/exec"; // <-- заменишь
+      "https://script.google.com/macros/s/AKfycbybgI6ZeeM36jocBLJ7MzBM89jMhFxu895o_kznwmCZXWXJlw3a_CiEh0dXJ55saGIyzw/exec"; // <-- заменишь
 
     const url = `${scriptUrl}?name=${encodeURIComponent(
       name

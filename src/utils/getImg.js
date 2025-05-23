@@ -1,1 +1,1 @@
-export { default as mobileBg} from "../assets/moblastbg.webp"
+export { default as mobileBg} from "../assets/bgg6.webp"
